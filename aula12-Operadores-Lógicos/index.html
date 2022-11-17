@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <h1>Operadores Lógicos</h1>
+    <p>Os Operadores Lógicos, também verificam condições. Só que cada um  deles tem suas regras específicas para verficá-las.</p>
+    <p>Para explicar melhor esses conceitos, vamos fazer uso de tabelas verdades que irão nos explicar melhor essas regras.</p>
+    
+    <h2>&& - And </h2>
+    <p>Vamos consultar a tabela verdade do operador && - AND.</p>
+    <table border="1px solid black">
+        <thead>
+        <tr>
+            <th colspan="5">And &&</th>
+        </tr>
+        <tr>
+            <th colspan="4">Entradas</th>
+            <th>Saídas</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>V</td>
+                <td>+</td>
+                <td>V</td>
+                <td>=</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>+</td>
+                <td>F</td>
+                <td>=</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>+</td>
+                <td>V</td>
+                <td>=</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>+</td>
+                <td>F</td>
+                <td>=</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+    <p><strong>OBS: </strong>O operador && - And, só retorna verdadeiro se todos os valores envolvidos na operação forem verdadeiros.</p>
+    <hr />
+    <h2>Operador || - Or</h2>
+    <p>Vamos consultar a tabela verdade do operador || - Or</p>
+    <table border="1px solid black">
+        <thead>
+        <tr>
+            <th colspan="5">|| Or</th>
+        </tr>
+        <tr>
+            <th colspan="4">Entradas</th>
+            <th>Saídas</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>V</td>
+                <td>+</td>
+                <td>V</td>
+                <td>=</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>+</td>
+                <td>F</td>
+                <td>=</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>+</td>
+                <td>V</td>
+                <td>=</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>+</td>
+                <td>F</td>
+                <td>=</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+    <p><strong>OBS: </strong>O operador || - Or, só retorna falso se todos os valores envolvidos na operação forem falsos.</p>
+    <p><strong>OBS: </strong>Conferir código fonte.</p>
+    <script src="script.js"></script>
+</body>
+</html>
